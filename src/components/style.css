@@ -1,0 +1,254 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Merriweather';
+  background: linear-gradient(131.2deg, #EAECC6 20.87%, #22BBCC 95.01%);
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+.nav {
+  background-color: white;
+  width: 100%;
+  height: 8rem;
+  margin-bottom: 5rem;
+}
+.nav ul {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.nav ul li {
+  text-decoration: none;
+  list-style: none;
+  position: absolute;
+}
+.logo > img {
+  object-fit: contain;
+  max-height: 8rem;
+  aspect-ratio: 1/1;
+  width: 100%;
+  height: 100%;
+}
+ul > .logo {
+  top: 0;
+  left: 4vw;
+}
+ul > .title {
+  font-size: 3.7rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.home {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.home__card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2.3rem;
+  gap: 1.5rem;
+  border-radius: 3rem;
+  width: 70rem;
+  max-height: 100%;
+  background-color: #F5F5F5;
+}
+.home__card > img {
+  aspect-ratio: 16/9;
+  border-radius: 2rem;
+  object-fit: cover;
+  max-width: 100%;
+}
+.home__card > p {
+  font-size: 2.5rem;
+  text-align: center;
+}
+.btn {
+  width: 70%;
+  height: 5rem;
+  border-radius: 2rem;
+  background-color: #46A2F5;
+  transition: .4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: .3rem white solid;
+}
+.btn-a {
+  font-size: 1.7rem;
+  color: white;
+  text-decoration: none;
+  background: none;
+  border: none;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.btn-invariant {
+  background-color: white;
+  border: .3rem solid #46A2F5;
+}
+.btn-invariant > .btn-a {
+  color: #46A2F5;
+  font-weight: bold;
+}
+.btn:hover {
+  background-color: white;
+  border: .3rem #46A2F5 solid;
+}
+.btn:hover > .btn-a {
+  color: #46A2F5;
+}
+footer {
+  width: 100%;
+  height: 7rem;
+  background-color: transparent;
+  margin-top: 4rem;
+  position: relative;
+  flex: 0 0 auto;
+}
+footer > h1 {
+  position: absolute;
+  color: white;
+  font-weight: normal;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.wrapper {
+  flex: 1 0 auto;
+}
+.girls-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  row-gap: 7rem;
+}
+.girl-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  background-color: #F5F5F5;
+  width: 35rem;
+  height: 100%;
+  padding: 3rem;
+  border-radius: 3rem;
+}
+.girl-card >img {
+  max-width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 2.2rem;
+}
+.name {
+  font-size: 3.2rem;
+  font-weight:600;
+}
+.description {
+  font-size: 1.7rem;
+}
+.gbtn {
+  margin-top: .5rem;
+  width: 100%;
+}
+.card-f-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nazmina-card {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  height: 100%;
+  padding: 4rem;
+  border-radius: 2.5rem;
+  background-color: white;
+}
+.fcol {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+  align-items: center;
+}
+
+.frow {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 4rem;
+}
+.frow > img {
+  max-width: 100%;
+  width: 10rem;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  flex:1;
+  border-radius: 1.8rem;
+  max-height: 100%;
+}
+.frowtext {
+  flex:1.2;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.frowtext > h1 {
+  font-size: 5.5rem;
+  font-weight: normal;
+}
+.frowtext > p {
+  font-size: 2.4rem;
+}
+.nazm {
+  font-size: 2rem;
+}
+main {
+  display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+@media only screen and (max-width: 300px) {
+  html {
+    font-size: 30%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* mobile phones */
+  html {
+    font-size: 40%;
+  }
+  .frow {
+    flex-direction: column;
+  }
+  .frow > img {
+    width: 100%;
+  }
+  .logo {
+    opacity: 0;
+  }
+  .nazm {
+    font-size: 1.7rem;
+  }
+  .mob__name {
+    font-size: 3.6rem;
+  }
+  .mob__des {
+    font-size: 1.9rem;
+  }
+  .mob__b {
+    font-size: 2rem;
+  }
+}
